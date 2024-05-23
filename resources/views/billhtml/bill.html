@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            border-top: 12px solid rgb(172, 7, 7);
+            padding-top: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .left, .header .right {
+            width: 45%;
+        }
+        .header .left h1, .header .left p, .header .right h3, .header .right p {
+            margin: 5px 0;
+        }
+        .header .left h1 {
+            color: rgb(172, 7, 7);
+        }
+        .header .right h3 {
+            text-align: right;
+            color: red;
+        }
+        .header .right p {
+            text-align: right;
+            font-weight: bold;
+        }
+        .title {
+            text-align: left;
+            color: rgb(172, 7, 7);
+            font-weight: bold;
+            font-size: 64px;
+            margin: 20px 0;
+        }
+        .details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .details p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        .details .left, .details .right {
+            width: 45%;
+        }
+        .details .center {
+            text-align: center;
+            width: 10%;
+        }
+        .details .right {
+            text-align: right;
+        }
+        .separator {
+            border-bottom: 2px solid #0000001f;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            color: red;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .footer {
+            margin-top: 20px;
+        }
+        .footer .notes {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .totals {
+            text-align: right;
+            margin-top: 10px;
+        }
+        .totals p {
+            margin: 0;
+            font-weight: bold;
+            color: red;
+        }
+        .total-amount {
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <h1>Silvalvi, S.L.</h1>
+                <p>C. Baiona N12 - 1D<br>
+                36700 - Tui<br>
+                Pontevedra<br>
+                B72628738</p>
+            </div>
+            <div class="right">
+                <h3>PRESUPUESTO PARA:</h3>
+                <p>REPRESENTACIONES CELSO ISLA, S.L.<br>
+                B36614105<br>
+                RÚA GANDARÓN, 44, VIGO, 36214, PONTEVEDRA<br>
+                info@celsoisla.com</p>
+            </div>
+        </div>
+        <div class="title">
+            <p>Wairbot aplicado a la mejora comercial</p>
+        </div>
+        <div class="details">
+            <div class="left">
+                <p style="color: red;">Fecha: 18/05/2024</p>
+            </div>
+            <div class="center">
+                <p style="color: red;">Nº: P20240039</p>
+            </div>
+            <div class="right">
+                <p style="color: red;">Validez: 30 días</p>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Precio unitario</th>
+                    <th>I.V.A</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>WairbotCtl para la mejora comercial y comunicación de cliente.</strong></td>
+                    <td>1</td>
+                    <td>12.500,00 €</td>
+                    <td>21%</td>
+                    <td>12.500,00 €</td>
+                </tr>
+                <tr>
+                    <td>1 - Catálogo de experiencias de producto</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5">Este catálogo de producto será realizado de forma dinámica y actual con fotos y vídeos de productos en sitios reales.</td>
+                </tr>
+                <tr>
+                    <td>2 - Catálogo de ayuda</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5">Catálogo de vídeos explicativos sobre la información necesaria a aportar sobre los productos.</td>
+                </tr>
+                <tr>
+                    <td>3 - Envío de Emails paralelos</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5">El sistema dispondrá de un envío de emails para duplicar la información enviada por WhatsApp y así garantizar la total entrega de la información.</td>
+                </tr>
+                <tr>
+                    <td>4 - Cuadro de mandos de control</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5">El cuadro de mandos medirá a través de gráficas, estadísticas e informes toda la interacción de los clientes y la mejora productiva gracias al sistema waitbot implementado.</td>
+                </tr>
+                <tr>
+                    <td>5 - Acceso automático de clientes para obtención de albaranes.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6 - Envío automático de albaranes por WhatsApp</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7 - Acceso automático de clientes para obtención de facturas.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8 - Envío automático de facturas por WhatsApp</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9 - Registro automatizado de albaranes de compra.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10 - Registro automatizado de facturas de compra.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5">Los formatos de facturas y albaranes de compra para los puntos 9 y 10 serán facilitados por el cliente.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="separator"></div>
+        <div class="footer">
+            <div class="notes">
+                <strong>Notas:</strong><br>
+                Forma de Pago Transferencia: ABANCA ES4720805066713040049627
+            </div>
+            <div class="totals">
+                <p>Base: 12.500,00 €</p>
+                <p>IVA: 2.625,00 €</p>
+                <p class="total-amount">TOTAL: 15.125,00 €</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
